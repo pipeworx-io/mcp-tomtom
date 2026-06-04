@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-tomtom",
+  "version": "0.1.0",
+  "description": "TomTom MCP — wraps the TomTom Search & Routing APIs (api.tomtom.com)",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "tomtom"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-tomtom"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
