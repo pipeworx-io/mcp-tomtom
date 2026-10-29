@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-tomtom",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "TomTom MCP — wraps the TomTom Search & Routing APIs (api.tomtom.com)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-tomtom": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "tomtom"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-tomtom.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/tomtom",
   "pipeworx": {
-    "sourceHash": "v1-91267c3185030b1b2c571e78f99c401f17e07447a7c8034d0df467a9a69b7e40",
-    "sourceCommit": "66a0692f029179984440cef6938cba7fdd41d66d"
+    "mode": "gateway",
+    "slug": "tomtom",
+    "gatewaySlug": "tomtom",
+    "sourceHash": "v1-1c665aea3ed1550ea509006b9ce3bfc0edf9281602b4b418eb55987eab964657",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
