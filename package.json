@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-tomtom",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "TomTom MCP — wraps the TomTom Search & Routing APIs (api.tomtom.com)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "tomtom",
     "gatewaySlug": "tomtom",
-    "sourceHash": "v1-1c665aea3ed1550ea509006b9ce3bfc0edf9281602b4b418eb55987eab964657",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-28e02d1eb691ec02522b2d883f46d9bc231f44c2f83e7a39a6d3ec4788aafd42",
+    "sourceCommit": "868e119d526d5409447b7ee2149afba7eb9d2593"
   }
 }
