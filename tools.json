@@ -1,6 +1,6 @@
 [
   {
-    "name": "geocode",
+    "name": "tomtom_geocode",
     "description": "Geocoding: convert an address, place name, or free-text location query into geographic coordinates (latitude/longitude). Returns formatted address, country, lat, lon, type, and match score. Example: geocode({ query: \"350 5th Ave, New York\" })",
     "inputSchema": {
       "type": "object",
@@ -60,7 +60,7 @@
     }
   },
   {
-    "name": "reverse_geocode",
+    "name": "tomtom_reverse_geocode",
     "description": "Reverse geocoding: convert latitude/longitude coordinates into a human-readable street address. Returns the freeform address, country, municipality, street name, postal code, and position. Example: reverse_geocode({ lat: 40.748, lon: -73.985 })",
     "inputSchema": {
       "type": "object",
@@ -85,7 +85,7 @@
     }
   },
   {
-    "name": "route",
+    "name": "tomtom_route",
     "description": "Traffic-aware routing / directions: calculate the best route between two points and return distance plus travel time computed with live traffic. Reports traffic delay so you get realistic ETAs, not free-flow estimates. Supports car, truck, pedestrian, and bicycle travel modes. Example: route({ from_lat: 40.748, from_lon: -73.985, to_lat: 40.689, to_lon: -74.044 })",
     "inputSchema": {
       "type": "object",

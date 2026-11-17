@@ -1,17 +1,17 @@
 # mcp-tomtom
 
-TomTom MCP — wraps the TomTom Search & Routing APIs (api.tomtom.com)
+Unofficial TomTom MCP — wraps the TomTom Search & Routing APIs (api.tomtom.com)
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1866+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 2007+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `geocode` | Geocoding: convert an address, place name, or free-text location query into geographic coordinates (latitude/longitude). Returns formatted address, country, lat, lon, type, and match score. Example: geocode({ query: "350 5th Ave, New York" }) |
+| `tomtom_geocode` | Geocoding: convert an address, place name, or free-text location query into geographic coordinates (latitude/longitude). Returns formatted address, country, lat, lon, type, and match score. Example: geocode({ query: "350 5th Ave, New York" }) |
 | `search_poi` | Search for points of interest (POIs) — businesses, landmarks, restaurants, gas stations, etc. — by name or category, optionally near a lat/lon center within a radius. Returns name, category, address, coordinates, phone, url, and distance. Example: search_poi({ query: "coffee", lat: 40.748, lon: -73.985, radius: 1000 }) |
-| `reverse_geocode` | Reverse geocoding: convert latitude/longitude coordinates into a human-readable street address. Returns the freeform address, country, municipality, street name, postal code, and position. Example: reverse_geocode({ lat: 40.748, lon: -73.985 }) |
-| `route` | Traffic-aware routing / directions: calculate the best route between two points and return distance plus travel time computed with live traffic. Reports traffic delay so you get realistic ETAs, not free-flow estimates. Supports car, truck, pedestrian, and bicycle travel modes. Example: route({ from_lat: 40.748, from_lon: -73.985, to_lat: 40.689, to_lon: -74.044 }) |
+| `tomtom_reverse_geocode` | Reverse geocoding: convert latitude/longitude coordinates into a human-readable street address. Returns the freeform address, country, municipality, street name, postal code, and position. Example: reverse_geocode({ lat: 40.748, lon: -73.985 }) |
+| `tomtom_route` | Traffic-aware routing / directions: calculate the best route between two points and return distance plus travel time computed with live traffic. Reports traffic delay so you get realistic ETAs, not free-flow estimates. Supports car, truck, pedestrian, and bicycle travel modes. Example: route({ from_lat: 40.748, from_lon: -73.985, to_lat: 40.689, to_lon: -74.044 }) |
 
 ## Quick Start
 
@@ -57,7 +57,7 @@ directly, instead of just this one's:
 }
 ```
 
-Both URLs reach the same gateway and the same 1866+ data sources. The
+Both URLs reach the same gateway and the same 2007+ data sources. The
 only difference is which pack's tools are listed **directly**; `ask_pipeworx`
 reaches all of them from either one.
 
